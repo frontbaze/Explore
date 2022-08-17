@@ -127,13 +127,15 @@ a {
     cursor: pointer;
 }
 .page__main {
-    margin-top: 114px;
-    position: relative;
-    top: 0;
-    left: -381px;
+    
 }
-
+.main-section__wrapper {
+    display: flex;
+    margin-top: 114px;
+    margin-bottom: 174px;
+}
 .main-section {
+    align-self: flex-start;
     width: 563px;
     height: 428px;
 }
