@@ -1,0 +1,22 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* VARS */
+
+:root {
+    --basic-white: #fff;
+    --basic-black: #000;
+    --accent-color: #FFC814;
+    --dark: #1F3347;
+    --dark-black: #181818;
+    --dark-grey: #22283C;
+    --grey: #70717B;
+    --light-grey: #9DA1B4;
+}
+
+/* GLOBAL */
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+}
