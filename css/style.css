@@ -170,3 +170,160 @@ a {
     background-color: #FFFDFD;
     cursor: pointer;
 }
+
+/* BOOKING */
+
+.main__booking {
+    
+}
+.booking {
+
+}
+.booking__tabs {
+    font-size: 0;
+}
+.booking__tabs input[type="radio"] {
+    display: none;
+}
+.booking__label {
+    box-sizing: border-box;
+    width: 120px;
+    height: 45px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: var(--basic-white);
+    color: var(--basic-black);
+    border-radius: 4px 4px 0 0;
+    margin-right: 10px;
+    padding: 10px 27px 10px 50px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+}
+.booking__label--accent::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/hotel-icon.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    left: 10px;
+}
+.booking__label--flight::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/flight-icon.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    left: 10px;
+}
+.booking__label--car::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/car-icon.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    left: 10px;
+}
+.booking__label--ship::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/ship-icon.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    left: 10px;
+}
+.booking__label:not(:first-of-type) {
+    border-left: none;
+}
+.booking__label--accent {
+    background-color: var(--accent-color);
+}
+.booking__tabs input[type="radio"]:checked + label {
+    border-bottom: 1px solid #fff;
+}
+.booking__container {
+    display: none;
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+}
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3,
+#tab-btn-4:checked~#content-4 {
+    display: block;
+}
+
+.booking__form {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 38px 30px;
+    color: var(--basic-black);
+    box-shadow: 0px 6px 24px #E4E2EE;
+}
+.form {
+    background-color: var(--basic-white);
+}
+.form__input {
+    margin: 0;
+    padding: 20px 10px;
+    border: none;
+    box-sizing: border-box;
+    width: 170px;
+    height: 56px;
+    background-color: var(--basic-white);
+    box-shadow: 0px 6px 24px #E4E2EE;
+    border-radius: 4px;
+}
+.form__label {
+    margin-top: 38px;
+}
+.form__destination input,
+.form__checkin input,
+.form__checkout input,
+.form__child input,
+.form__adult input {
+    margin-top: 7px;
+}
+.form__destination {
+    width: 170px;
+}
+.form__checkin {
+    width: 170px;
+}
+.form__checkout {
+    width: 170px;
+}
+.form__child {
+    width: 170px;
+}
+.form__adult {
+    width: 170px;
+}
+
+.form__button {
+    width: 160px;
+    height: 56px;
+    background-color: var(--accent-color);
+    color: var(--basic-black);
+    border-radius: 4px;
+    cursor: pointer;
+}
