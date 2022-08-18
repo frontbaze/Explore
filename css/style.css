@@ -2,6 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+@font-face {
+    font-family: "Quick Kiss";
+    src: url("../fonts/Quick Kiss Personal Use.ttf");
+}
+
 /* VARS */
 
 :root {
@@ -30,7 +35,7 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
     color: var(--basic-white);
-    background-color: var(--basic-black);
+    background-color: var(--basic-white);
 }
 
 img {
@@ -123,6 +128,7 @@ a {
     width: 160px;
     height: 56px;
     background-color: var(--accent-color);
+    color: var(--dark);
     border-radius: 4px;
     cursor: pointer;
 }
@@ -161,6 +167,7 @@ a {
 .main-section__buttons--exploration {
     width: 160px;
     background-color: var(--accent-color);
+    color: var(--dark-grey);
     border-radius: 4px;
     cursor: pointer;
 }
@@ -168,13 +175,16 @@ a {
     width: 160px;
     border-radius: 4px;
     background-color: #FFFDFD;
+    color: var(--dark-black);
     cursor: pointer;
 }
 
 /* BOOKING */
 
 .main__booking {
-    
+    position: relative;
+    margin-bottom: 96px;
+    z-index: 2;
 }
 .booking {
 
@@ -194,7 +204,7 @@ a {
     vertical-align: middle;
     user-select: none;
     background-color: var(--basic-white);
-    color: var(--basic-black);
+    color: var(--dark);
     border-radius: 4px 4px 0 0;
     margin-right: 10px;
     padding: 10px 27px 10px 50px;
@@ -261,7 +271,6 @@ a {
 }
 .booking__container {
     display: none;
-    border: 1px solid #e0e0e0;
     font-size: 16px;
 }
 #tab-btn-1:checked~#content-1,
@@ -292,8 +301,10 @@ a {
     background-color: var(--basic-white);
     box-shadow: 0px 6px 24px #E4E2EE;
     border-radius: 4px;
+    color: var(--grey);
 }
 .form__label {
+    color: var(--dark);
     margin-top: 38px;
 }
 .form__destination input,
@@ -323,7 +334,159 @@ a {
     width: 160px;
     height: 56px;
     background-color: var(--accent-color);
-    color: var(--basic-black);
+    color: var(--dark-grey);
     border-radius: 4px;
     cursor: pointer;
+}
+
+/* ABOUT */
+
+.main__about {
+    position: relative;
+    background-color: var(--basic-white);
+}
+.about {
+
+}
+.about__travel {
+    position: absolute;
+    top: -112px;
+    left: -10px;
+    font-weight: 600;
+    font-size: 430px;
+    line-height: 300px;
+    color: rgba(244, 246, 250, 0.8);
+    opacity: 0.8;
+}
+.about__content {
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+.about__photo-container {
+    position: relative;
+    width: 577px;
+    height: 579px;
+    margin-right: 82px;
+}
+.about__photo-container img {
+    filter: drop-shadow(0px 6px 24px #E4E2EE);
+    border-radius: 14px;
+}
+.about__1person {
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+}
+.about__info-container {
+    align-self: start;
+    width: 525px;
+    height: 569px;
+    color: var(--basic-black);
+}
+.about__us {
+    font-family: "Quick Kiss";
+    font-size: 24px;
+    line-height: 15px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+.about__title {
+    color: var(--dark);
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+.about__text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--light-grey);
+    margin-bottom: 20px;
+}
+.about__list {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 25px;
+}
+.about__list::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/check-icon.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 99px;
+    top: 2px;
+    left: 0px;
+}
+.about__item {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--light-grey);
+}
+
+.about__stats {
+}
+
+.stats {
+    width: 494px;
+    height: 80px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 32px;
+    margin-bottom: 75px;
+
+}
+.stats__item {
+    width: 104px;
+}
+.stats__number {
+    font-size: 36px;
+    line-height: 28px;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 7px;
+}
+.stats__description {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--light-grey);
+}
+
+.about__button {
+    width: 160px;
+    height: 56px;
+    background-color: var(--accent-color);
+    color: var(--dark);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 900;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 131px;
+}
+
+.about__boards {
+    position: absolute;
+    right: -208px;
+    bottom: 1px;
 }
